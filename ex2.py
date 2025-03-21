@@ -250,7 +250,6 @@ def final_output():
 """                                         play                       ----------------------------"""
 
 def stop():
-
     print()
     time.sleep(1)
     print('    shutting down...   ')
@@ -258,7 +257,6 @@ def stop():
     print()
     time.sleep(1)
     sys.exit()
-
         
 def tourney_reset():
     random.shuffle(teams_2)
@@ -367,6 +365,7 @@ def play():
         play()
     if not key_5.isalpha() and key_5 != b' ':
         stop()
+
 
 play()
 
